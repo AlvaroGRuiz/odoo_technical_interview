@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="product_product_consumptions_form_view" model="ir.ui.view">
+            <field name="name">product.product.consumptions.form.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <page name="inventory" position="after">
+                    <page string="Consumptions" name="consumptions">
+                        <group name="consumptions" string="Consumptions">
+                            <field name="consumptions_ids" nolabel="1" context="{'tree_view_ref':'consumptions.view_consumptions_tree','form_view_ref':'consumptions.view_consumptions_form'}"/>
+                        </group>
+                    </page>
+                </page>
+            </field>
+       </record>
+
+       <record id="product_category_code_form_view" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+           <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group name="code">
+                        <field name="code" />
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>
