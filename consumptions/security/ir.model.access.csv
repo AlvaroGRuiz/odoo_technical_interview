@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_consumptions_group_consumptions,product.consumption group_consumptions,model_product_consumption,consumptions.group_consumptions,1,1,1,1
