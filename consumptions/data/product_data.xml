@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Product categories -->
+        <record id="product_category_ll" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">landline</field>
+            <field name="code">LL</field>
+        </record>
+        <record id="product_category_mo" model="product.category">
+            <field name="parent_id" ref="product.product_category_all"/>
+            <field name="name">mobile</field>
+            <field name="code">MO</field>
+        </record>
+        <!-- Product -->
+        <record id="product_adsl" model="product.product">
+            <field name="name">ADSL</field>
+            <field name="categ_id" ref="product_category_ll"/>
+            <field name="standard_price">10.0</field>
+            <field name="list_price">10.0</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="default_code">LL001</field>
+        </record>
+        <record id="product_fiber" model="product.product">
+            <field name="name">Fiber</field>
+            <field name="categ_id" ref="product_category_ll"/>
+            <field name="standard_price">10.0</field>
+            <field name="list_price">10.0</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="default_code">LL002</field>
+        </record>
+        <record id="product_mobile_voice" model="product.product">
+            <field name="name">Mobile voice</field>
+            <field name="categ_id" ref="product_category_mo"/>
+            <field name="standard_price">10.0</field>
+            <field name="list_price">10.0</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="default_code">MO001</field>
+        </record>
+        <record id="product_mobile_data" model="product.product">
+            <field name="name">Mobile data</field>
+            <field name="categ_id" ref="product_category_mo"/>
+            <field name="standard_price">10.0</field>
+            <field name="list_price">10.0</field>
+            <field name="type">service</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="default_code">MO002</field>
+        </record>
+        <!-- Consumption -->
+        <record id="product_consumption_1" model="product.consumption">
+            <field name="timestamp" eval="datetime.utcfromtimestamp(1605892270)" />
+            <field name="product_id" ref="product_adsl"/>
+            <field name="quantity">13</field>
+        </record>
+        <record id="product_consumption_2" model="product.consumption">
+            <field name="timestamp" eval="datetime.utcfromtimestamp(1605892270)" />
+            <field name="product_id" ref="product_adsl"/>
+            <field name="quantity">11</field>
+        </record>
+        <record id="product_consumption_3" model="product.consumption">
+            <field name="timestamp" eval="datetime.utcfromtimestamp(1605892270)" />
+            <field name="product_id" ref="product_mobile_data"/>
+            <field name="quantity">23</field>
+        </record>
+        <!-- This is for delete on test -->
+        <record id="product_consumption_4" model="product.consumption">
+            <field name="timestamp" eval="datetime.utcfromtimestamp(1605892270)" />
+            <field name="product_id" ref="product_mobile_data"/>
+            <field name="quantity">10</field>
+        </record>
+    </data>
+</odoo>
