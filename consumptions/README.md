@@ -15,7 +15,7 @@ product categories using category codes ('LL', 'MO'), for a visual representatio
 Technical guide</p>
 <p>• The new module will depend on the following Odoo core modules: base and product.</p>
 <p>• Please, create a new Gitlab or <a href="https://github.com/AlvaroGRuiz/odoo_technical_interview/tree/main/consumptions">Github</a> repository.</p>
-<p>• <a hreft="https://gitlab.com/somitcoop/odoo-technical-interview-data">A list of resources</a> is provided along with this document.</p>
+<p>• <a href="https://gitlab.com/somitcoop/odoo-technical-interview-data">A list of resources</a> is provided along with this document.</p>
 
 <h2>Data model proposal</h2>
 
