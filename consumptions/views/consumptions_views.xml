@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Views item -->
+    <record id="view_consumptions_filter" model="ir.ui.view">
+        <field name="name">consumptions.list.select</field>
+        <field name="model">product.consumption</field>
+        <field name="arch" type="xml">
+            <search string="Consumptions">
+                <field name="timestamp" />
+                <field name="product_id" />
+                <field name="quantity"/>
+                <filter string="The Last Month" name="filter_tha_last_month"
+                    domain="[('timestamp', '&gt;=', context_today().strftime('%Y-%m-01')),
+                    ('timestamp', '&lt;', (context_today()+relativedelta(months=1)).strftime('%Y-%m-01'))]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Timestamp" name="timestamp" domain="[]" context="{'group_by': 'timestamp'}"/>
+                    <filter name="product" string="Product" domain="[]" context="{'group_by': 'product_id'}"/>
+                    <filter string="Quantity" name="quantity" domain="[]" context="{'group_by': 'quantity'}"/>
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record id="view_consumptions_tree" model="ir.ui.view">
+        <field name="name">consumptions.tree</field>
+        <field name="model">product.consumption</field>
+        <field name="arch" type="xml">
+            <tree string="Consumptions" multi_edit="1" sample="1">
+                <field name="timestamp" widget="datetime"/>
+                <field name="product_id"/>
+                <field name="quantity"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_consumptions_form" model="ir.ui.view">
+        <field name="name">consumptions.form</field>
+        <field name="model">product.consumption</field>
+        <field name="arch" type="xml">
+          <form string="Consumptions">
+            <sheet>
+                <group name="consumption_header">
+                    <field name="timestamp" widget="datetime"/>
+                    <field name="product_id"/>
+                    <field name="quantity"/>
+                </group>
+            </sheet>
+          </form>
+        </field>
+    </record>
+
+    <record id="view_consumptions_graph" model="ir.ui.view">
+        <field name="name">consumptions.graph</field>
+        <field name="model">product.consumption</field>
+        <field name="arch" type="xml">
+            <graph string="Telecom Consumption Report" type="bar">
+                <field name="category_code"/>
+                <field name="quarter"/>
+                <field name="quantity" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Actions item -->
+    <record id="consumptions_action" model="ir.actions.act_window">
+        <field name="name">Consumptions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.consumption</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_consumptions_tree"/>
+        <field name="search_view_id" ref="view_consumptions_filter"/>
+        <field name="context">{'search_default_filter_tha_last_month': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new consumption
+            </p>
+        </field>
+    </record>
+
+    <record id="consumptions_quarters_action" model="ir.actions.act_window">
+        <field name="name">Consumptions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.consumption</field>
+        <field name="view_mode">graph</field>
+        <field name="view_id" ref="view_consumptions_graph"/>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem id="consumptions_menu_root"
+        name="Consumptions"
+        web_icon="consumptions,static/description/icon.png"
+        sequence="66"/>
+
+    <!-- Menus item -->
+    <menuitem id="consumptions_menu"
+        name="Consumptions"
+        parent="consumptions_menu_root"
+        action="consumptions_action"
+        sequence="1"/>
+
+    <menuitem id="consumptions_quarters_report_menu"
+        name="Consumptions Quarters Graph"
+        parent="consumptions_menu_root"
+        action="consumptions_quarters_action"
+        sequence="2"/>
+
+</odoo>
