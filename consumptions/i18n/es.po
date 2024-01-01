@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* consumptions
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-30 16:59+0000\n"
+"PO-Revision-Date: 2023-12-30 16:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: consumptions
+#: model:product.product,name:consumptions.product_adsl
+#: model:product.template,name:consumptions.product_adsl_product_template
+msgid "ADSL"
+msgstr "ADSL"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__category_code
+msgid "Category code"
+msgstr "Código de categoría"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_category__code
+msgid "Code"
+msgstr "Código"
+
+#. module: consumptions
+#: model:ir.actions.act_window,name:consumptions.consumptions_action
+#: model:ir.actions.act_window,name:consumptions.consumptions_quarters_action
+#: model:ir.model.fields,field_description:consumptions.field_product_product__consumptions_ids
+#: model:ir.ui.menu,name:consumptions.consumptions_menu
+#: model:ir.ui.menu,name:consumptions.consumptions_menu_root
+#: model:res.groups,name:consumptions.group_consumptions
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_form
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_tree
+msgid "Consumptions"
+msgstr "Consumos"
+
+#. module: consumptions
+#: model:ir.ui.menu,name:consumptions.consumptions_quarters_report_menu
+msgid "Consumptions Quarters Graph"
+msgstr "Consumo Trimestres Gráfico"
+
+#. module: consumptions
+#: model_terms:ir.actions.act_window,help:consumptions.consumptions_action
+msgid "Create a new consumption"
+msgstr "Crear un nuevo consumo"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_category__display_name
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__display_name
+#: model:ir.model.fields,field_description:consumptions.field_product_product__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: consumptions
+#: model:product.product,name:consumptions.product_fiber
+#: model:product.template,name:consumptions.product_fiber_product_template
+msgid "Fiber"
+msgstr "Fiber"
+
+#. module: consumptions
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_category__id
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__id
+#: model:ir.model.fields,field_description:consumptions.field_product_product__id
+msgid "ID"
+msgstr "ID"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_category____last_update
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption____last_update
+#: model:ir.model.fields,field_description:consumptions.field_product_product____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__write_date
+msgid "Last Updated on"
+msgstr "Última actualización de"
+
+#. module: consumptions
+#: model:product.product,name:consumptions.product_mobile_data
+#: model:product.template,name:consumptions.product_mobile_data_product_template
+msgid "Mobile data"
+msgstr "Datos móviles"
+
+#. module: consumptions
+#: model:product.product,name:consumptions.product_mobile_voice
+#: model:product.template,name:consumptions.product_mobile_voice_product_template
+msgid "Mobile voice"
+msgstr "Voz móvil"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: consumptions
+#: model:ir.model,name:consumptions.model_product_product
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__product_id
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+msgid "Product"
+msgstr "Producto"
+
+#. module: consumptions
+#: model:ir.model,name:consumptions.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: consumptions
+#: model:ir.model.fields.selection,name:consumptions.selection__product_consumption__quarter__q1
+msgid "Q1"
+msgstr "T1"
+
+#. module: consumptions
+#: model:ir.model.fields.selection,name:consumptions.selection__product_consumption__quarter__q2
+msgid "Q2"
+msgstr "T2"
+
+#. module: consumptions
+#: model:ir.model.fields.selection,name:consumptions.selection__product_consumption__quarter__q3
+msgid "Q3"
+msgstr "T3"
+
+#. module: consumptions
+#: model:ir.model.fields.selection,name:consumptions.selection__product_consumption__quarter__q4
+msgid "Q4"
+msgstr "T4"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__quantity
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__quarter
+msgid "Quarter"
+msgstr "Trimestre"
+
+#. module: consumptions
+#: model:ir.model,name:consumptions.model_product_consumption
+msgid "Tax Group"
+msgstr "Grupo Fiscal"
+
+#. module: consumptions
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_graph
+msgid "Telecom Consumption Report"
+msgstr "Informe sobre el consumo de telecomunicaciones"
+
+#. module: consumptions
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+msgid "The Last Month"
+msgstr "El último mes"
+
+#. module: consumptions
+#: model:ir.model.fields,field_description:consumptions.field_product_consumption__timestamp
+#: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
+msgid "Timestamp"
+msgstr "Marca de tiempo"
+
+#. module: consumptions
+#: model:product.product,uom_name:consumptions.product_adsl
+#: model:product.product,uom_name:consumptions.product_fiber
+#: model:product.product,uom_name:consumptions.product_mobile_data
+#: model:product.product,uom_name:consumptions.product_mobile_voice
+#: model:product.template,uom_name:consumptions.product_adsl_product_template
+#: model:product.template,uom_name:consumptions.product_fiber_product_template
+#: model:product.template,uom_name:consumptions.product_mobile_data_product_template
+#: model:product.template,uom_name:consumptions.product_mobile_voice_product_template
+msgid "Units"
+msgstr "Unidades"
