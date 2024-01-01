@@ -38,6 +38,7 @@ msgstr "Código"
 #: model:ir.ui.menu,name:consumptions.consumptions_menu
 #: model:ir.ui.menu,name:consumptions.consumptions_menu_root
 #: model:res.groups,name:consumptions.group_consumptions
+#: model_terms:ir.ui.view,arch_db:consumptions.product_product_consumptions_form_view
 #: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_filter
 #: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_form
 #: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_tree
@@ -165,11 +166,6 @@ msgstr "Cantidad"
 #: model:ir.model.fields,field_description:consumptions.field_product_consumption__quarter
 msgid "Quarter"
 msgstr "Trimestre"
-
-#. module: consumptions
-#: model:ir.model,name:consumptions.model_product_consumption
-msgid "Tax Group"
-msgstr "Grupo Fiscal"
 
 #. module: consumptions
 #: model_terms:ir.ui.view,arch_db:consumptions.view_consumptions_graph
