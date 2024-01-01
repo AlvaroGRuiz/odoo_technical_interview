@@ -20,7 +20,6 @@ codes, for a visual representation of data trends.
 - REST API for Consumptions resource.
 - Data files to import Products, Product categories and Consumptions resources
 - Unit tests
-
     """,
     'category': 'Sales/Sales',
     'depends' : ['base', 'product', 'base_rest'],
