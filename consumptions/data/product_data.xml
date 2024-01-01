@@ -69,11 +69,5 @@
             <field name="product_id" ref="product_mobile_data"/>
             <field name="quantity">23</field>
         </record>
-        <!-- This is for delete on test -->
-        <record id="product_consumption_4" model="product.consumption">
-            <field name="timestamp" eval="datetime.utcfromtimestamp(1605892270)" />
-            <field name="product_id" ref="product_mobile_data"/>
-            <field name="quantity">10</field>
-        </record>
     </data>
 </odoo>

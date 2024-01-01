@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!-- Consumptions added to the product form view -->
        <record id="product_product_consumptions_form_view" model="ir.ui.view">
             <field name="name">product.product.consumptions.form.inherit</field>
             <field name="model">product.product</field>
@@ -15,7 +16,7 @@
                 </page>
             </field>
        </record>
-
+        <!-- Code field added to the product category form view -->
        <record id="product_category_code_form_view" model="ir.ui.view">
             <field name="name">product.category.form</field>
             <field name="model">product.category</field>

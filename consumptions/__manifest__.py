@@ -3,6 +3,7 @@
 {
     'name' : 'Consumptions',
     'version' : '1.0',
+    'author': 'Álvaro García Ruiz',
     'description': """
 Consumptions
 ====================
